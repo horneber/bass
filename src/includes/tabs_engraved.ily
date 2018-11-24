@@ -14,3 +14,20 @@ minFret =
     \set TabStaff.minimumFret = #fret
   #})
 
+
+
+% define a shortcut to easily get rid of tabs completely
+% to remove the tabs
+tabs =
+#(define-music-function
+  (parser location expression)
+  (string-or-music?)
+  #{
+    \new TabStaff \with {
+      stringTunings = #bass-tuning
+    } {
+      \clef moderntab
+      \set TabStaff.restrainOpenStrings = ##t
+      #expression
+    }
+  #})

@@ -9,7 +9,18 @@ minFret =
   (parser location fret)
   (number?)
   #{
-    % Define empty on purpose to remove expression generation
-    
+    % Defined empty on purpose to remove expression generation
+
   #})
 
+
+
+% define a shortcut to easily get rid of tabs completely
+% to remove the tabs
+tabs =
+#(define-music-function
+  (parser location expression)
+  (string-or-music?)
+  #{
+    % Defined empty on purpose to remove expression generation  
+  #})

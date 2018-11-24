@@ -1,9 +1,11 @@
 \version "2.19.82"
 
+\include "includes/tabs_engraved.ily"
+%\include "includes/no_tabs_engraved.ily"
 \include "includes/settings.ily"
 \include "includes/shortcuts.ily"
-%\include "includes/tabs_engraved.ily"
-\include "includes/no_tabs_engraved.ily"
+
+
 
 \header {
   title = "Against all odds (Live in Berlin 1990)"
@@ -215,7 +217,7 @@ chordsSong = {
 }
 
 
-\include "includes/tabs_define.ily"
+
 \score {
 
   <<
@@ -236,30 +238,9 @@ chordsSong = {
       \bass
     }
 
-    
-  %  \tabs
+    \tabs{ \bass}
 
   >>
   \layout {}
   \midi {}
 }
-
-
-%{
-    \context ChordNames = c {
-       % Scale down the size of the chord names by .75
-       \property ChordNames.ChordName \set #'font-magnification = #0.75
-
-       % Prevent chord names from getting too close together,
-       % even when reduced in size.
-       \property ChordNames.ChordName \override #'word-space = #2
-
-       \property ChordNames.ChordName \override #'style = #'american
-
-       \chords {
-            e2 e4/+cis b4/+dis
-            e2 e4/+cis b4/+dis
-        }
-
-    }
-%}
