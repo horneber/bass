@@ -15,16 +15,16 @@ minFret =
   #})
 
 
-
 % define a shortcut to easily get rid of tabs completely
 % to remove the tabs
+% use #bass-tuning for four string bass or #bass-five-string-tuning for five string bass
 tabs =
 #(define-music-function
-  (parser location expression)
-  (string-or-music?)
+  (parser location tuning expression )
+  (list? string-or-music?)
   #{
     \new TabStaff \with {
-      stringTunings = #bass-tuning
+      stringTunings = #tuning
     } {
       \clef moderntab
       \set TabStaff.restrainOpenStrings = ##t

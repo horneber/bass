@@ -1,7 +1,7 @@
 \version "2.19.82"
 
-%\include "includes/tabs_engraved.ily"
-\include "includes/no_tabs_engraved.ily"
+\include "includes/tabs_engraved.ily"
+%\include "includes/no_tabs_engraved.ily"
 \include "includes/settings.ily"
 \include "includes/shortcuts.ily"
 
@@ -238,7 +238,7 @@ chordsSong = {
       \bass
     }
 
-    \tabs{ \bass}
+    \tabs #bass-tuning { \bass}
 
   >>
   \layout {}
