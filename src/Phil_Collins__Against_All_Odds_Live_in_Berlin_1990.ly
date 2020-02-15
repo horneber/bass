@@ -238,7 +238,7 @@ chordsSong = {
       \bass
     }
 
-    \tabs{ \bass}
+    \tabs #bass-tuning { \bass}
 
   >>
   \layout {}

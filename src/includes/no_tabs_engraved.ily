@@ -19,8 +19,8 @@ minFret =
 % to remove the tabs
 tabs =
 #(define-music-function
-  (parser location expression)
-  (string-or-music?)
+  (parser location tuning expression )
+  (list? string-or-music?)
   #{
     % Defined empty on purpose to remove expression generation  
   #})
