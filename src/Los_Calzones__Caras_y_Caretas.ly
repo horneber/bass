@@ -1,3 +1,4 @@
+
 \version "2.19.82"
 
 %\include "includes/tabs_engraved.ily"
@@ -90,7 +91,7 @@ firstVerse = {
   g4 b d b8 d
   c4 c c c
   \minFret #7
-  e8 e4  e4  e8 e e
+  e8 e r e r e8 e e
   
   \barbara
 }
@@ -179,44 +180,44 @@ breakup = {
   \shortSkit
   \barbara
   \italMark  "Break Up"  
-  a4 r8 a4. r4
-  a a r2
-  a8 a r8 a4. r4
-  a a r2
+  a4 r8 a4 r4.
+  a4 a r2
+  a8 a r8 a4 r4.
+  a4 a r2
   |
-  a4 r8 a4. r4
-  a a r2
-  d,4 r8 d4. r4
-  e e r2
+  a4 r8 a4 r4.
+  a4 a r2
+  d,4 r8 d4 r4.
+  e4 e r2
   |
-  a4 r8 a4. r4
-  a a r2
-  d,4 r8 d4. r4
+  a4 r8 a4 r4.
+  a4 a r2
+  d,4 r8 d4 r4.
   \minFret #5
-  e e g r8 b
+  e4 e g r8 b
   |
-  a4 r8 a4. r4
-  a a r2
+  a4 r8 a4 r4.
+  a4 a r2
   \minFret #3
-  d,4 r8 d4. r4
+  d,4 r8 d4 r4.
   e4 b'4 e4. b8
   |
-  a4 r8 a4. r4
+  a4 r8 a4 r4.
   \minFret #5
   a4 c b8 c r c
   \minFret #3
   d4 r8 d4. r4
   e4 b4 e,4. r8
   |
-  a4 r8 a4. r4
+  a4 r8 a4 r4.
   \minFret #5
   a4 b c r8 c
   \minFret #3
   d4 r8 d4. r4
   e4 b4 e,4. r8
   |
-  a4 r8 a4. r4
-  a a r2
+  a4 r8 a4 r4.
+  a4 a r2
   d4 r8 d4. r4
   e e r2
   |
